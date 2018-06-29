@@ -108,7 +108,6 @@ function install_sentinel {
 		echo -e "$tgreen""Complete"
 }
 
-sudo -i >/dev/null 2>&1
 updates
 download_unpack_install
 setup_initial_config
