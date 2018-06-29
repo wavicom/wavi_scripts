@@ -65,14 +65,14 @@ function setup_initial_config {
 	externalip=$current_ip:9983
 	maxconnections=25
 	#--------------------
-	addnode=47.75.54.241
-	addnode=167.99.45.159
-	addnode=207.246.95.82
-	addnode=109.95.53.26
-	addnode=195.133.201.144
-	addnode=180.126.197.62
-	addnode=80.82.215.18
-	addnode=167.99.194.240
+	addnode=80.211.202.16
+	addnode=81.2.254.162
+	addnode=194.182.72.133
+	addnode=35.237.108.220
+	addnode=145.239.139.2
+	addnode=149.28.37.197
+	addnode=89.40.3.27
+	addnode=183.250.175.209
 	#--------------------
 	EOF
 }
