@@ -27,6 +27,10 @@ Running the script:
 
 The installation process can take 5 to 15 minutes, depending on your VPS configuration.
 
+***Step 4:***
+
+Follow the instructions in the terminal. Then wait for the full synchronization on the VPS wallet. After that, it should take some time before the status of WATCHDOG_EXPIRED will change to ENABLED. It usually takes 20-30 minutes.
+
 ### Installation of WAVI Sentinel.
 
 ***Step 1:*** 
@@ -48,3 +52,11 @@ Running the script:
 `./setup_wavi_only_sentinel.sh`
 
 The installation process can take 1 to 5 minutes, depending on your VPS configuration.
+
+***Step 4:***
+
+Test the config by runnings all tests:
+
+`cd sentinel && ./venv/bin/py.test ./test`
+
+You should get: "23 tests passed". Congratulations! You have successfully installed WAVI.
