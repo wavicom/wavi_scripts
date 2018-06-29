@@ -21,4 +21,6 @@ function install_sentinel {
 		echo -e "$tgreen""cd sentinel && ./venv/bin/py.test ./test"
 }
 
+clear
+
 install_sentinel
