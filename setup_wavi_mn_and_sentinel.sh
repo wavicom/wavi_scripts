@@ -107,6 +107,7 @@ function install_sentinel {
 		cd >/dev/null 2>&1
 		echo -e "$tgreen""Complete"
 }
+clear
 
 updates
 download_unpack_install
