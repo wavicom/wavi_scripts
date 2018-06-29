@@ -2,7 +2,7 @@
 
 tred=$(tput setaf 1); tgreen=$(tput setaf 2); tyellow=$(tput setaf 3); tblue=$(tput setaf 4); tmagenta=$(tput setaf 5); tcyan=$(tput setaf 6); treset=$(tput sgr0); tclear=$(tput clear); twbg=$(tput setab 7)
 
-echo "$tgreenSentinel Install Script for WAVI"
+echo "$tgreen""Sentinel Install Script for WAVI"
 
 function install_sentinel {
 
@@ -18,7 +18,7 @@ function install_sentinel {
 		cd >/dev/null 2>&1
 		echo -e "$tgreen""Complete"
 		echo -e "$tyellow""Please check the functionality of Sentinel with the command:"
-		echo -e "$tgreen""cd sentinel && ./venv/bin/py.test ./test"
+		echo -e "$tgreen""cd sentinel && ./venv/bin/py.test ./test""$treset"
 }
 
 clear
