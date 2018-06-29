@@ -9,7 +9,7 @@ function randpw {
 }
 
 function updates {
-	echo -e "$tyellow""Preparing the VPS to setup. It's gonna take some time"
+	echo -e "$tyellow""Preparing the VPS to setup. It's gonna take some time."
 	apt-get update >/dev/null 2>&1
 	DEBIAN_FRONTEND=noninteractive apt-get update > /dev/null 2>&1
 	DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq upgrade >/dev/null 2>&1
