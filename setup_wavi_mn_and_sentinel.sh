@@ -125,4 +125,4 @@ echo -e "$tyellow""MN1 $tgreen$current_ip:9983 $genkey$tmagenta txhash txindex$t
 
 echo -e " * replace:$tmagenta txhash$treset and$tmagenta index$treset with your correct values from$tblue masternode outputs$treset"
 echo -e " *$tyellow MN1$treset can be anything you want, just keep it in one word\n"
-echo -e "After you edit the$tgreen masternode.conf$treset file and restart your wallet, you can$tmagenta start alias$treset from the Masternode Tab in the wallet.\n"
+echo -e "After you edit the$tgreen masternode.conf$treset file and restart your wallet, you can$tmagenta start MISSING$treset from the Masternode Tab in the wallet.\n"
