@@ -2,8 +2,6 @@
 
 tred=$(tput setaf 1); tgreen=$(tput setaf 2); tyellow=$(tput setaf 3); tblue=$(tput setaf 4); tmagenta=$(tput setaf 5); tcyan=$(tput setaf 6); treset=$(tput sgr0); tclear=$(tput clear); twbg=$(tput setab 7)
 
-echo "$tgreen""Masternode Install Script for WAVI"
-
 function randpw {
 	< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-16};echo;
 }
@@ -108,7 +106,7 @@ function install_sentinel {
 		echo -e "$tgreen""Complete"
 }
 clear
-
+echo "$tgreen""Masternode Install Script for WAVI"
 updates
 download_unpack_install
 setup_initial_config
