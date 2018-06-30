@@ -116,7 +116,7 @@ wavi/wavid -daemon >/dev/null 2>&1
 get_key_update_config
 wavi/wavi-cli stop >/dev/null 2>&1
 install_sentinel
-wavi/wavid -daemon -reindex >/dev/null 2>&1
+wavi/wavid -daemon >/dev/null 2>&1
 
 echo -e "\n"
 echo -e "Masternode setup is done on this side. You should go back to your Wallet and add this line to your$tgreen masternode.conf$reset file:\n"
