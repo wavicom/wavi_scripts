@@ -2,8 +2,6 @@
 
 tred=$(tput setaf 1); tgreen=$(tput setaf 2); tyellow=$(tput setaf 3); tblue=$(tput setaf 4); tmagenta=$(tput setaf 5); tcyan=$(tput setaf 6); treset=$(tput sgr0); tclear=$(tput clear); twbg=$(tput setab 7)
 
-echo "$tgreen""Sentinel Install Script for WAVI"
-
 function install_sentinel {
 
 		echo -e "$tyellow""Install WAVI Sentinel"
@@ -22,5 +20,5 @@ function install_sentinel {
 }
 
 clear
-
+echo "$tgreen""Sentinel Install Script for WAVI"
 install_sentinel
