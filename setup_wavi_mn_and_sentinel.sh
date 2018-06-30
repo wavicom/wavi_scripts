@@ -105,7 +105,6 @@ function install_sentinel {
 		
 		sudo crontab -l | { cat; echo "* * * * * cd /root/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1" ;} | crontab -
 		cd >/dev/null 2>&1
-		sleep 60
 		echo -e "$tgreen""Complete"
 }
 clear
