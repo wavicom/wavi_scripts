@@ -55,7 +55,7 @@ function setup_initial_config {
 	
 	current_ip=$(curl -s https://v4.ifconfig.co/)
 	
-	cat <<- EOF > /root/.wavicore/wavi.conf
+	cat <<- EOF > ~/.wavicore/wavi.conf
 	#--------------------
 	rpcuser=waviuser
 	rpcpassword=$(randpw)
@@ -86,8 +86,8 @@ function get_key_update_config {
 	fi
 	echo "$tgreen$genkey$treset"
 	
-	echo "masternode=1" >> /root/.wavicore/"wavi.conf"
-	echo "masternodeprivkey=$genkey" >> /root/.wavicore/"wavi.conf"
+	echo "masternode=1" >> ~/.wavicore/"wavi.conf"
+	echo "masternodeprivkey=$genkey" >> ~/.wavicore/"wavi.conf"
 }
 
 function install_sentinel {
@@ -100,7 +100,7 @@ function install_sentinel {
 		virtualenv ./venv >/dev/null 2>&1
 		./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
 		crontab /etc/crontab
-		crontab -l | { cat; echo "* * * * * cd /root/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1" ;} | crontab -
+		crontab -l | { cat; echo "* * * * * cd ~/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1" ;} | crontab -
 		cd >/dev/null 2>&1
 		echo -e "$tgreen""Complete"
 }
