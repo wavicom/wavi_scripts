@@ -29,7 +29,11 @@ The installation process can take 5 to 15 minutes, depending on your VPS configu
 
 ***Step 4:***
 
-Edit your `masternode.conf` on the local wallet following the instructions in the terminal (here you will be shown your "masternode private key" - copy it). Then wait for the full synchronization on the VPS wallet. 
+Edit your `masternode.conf` on the local wallet following the instructions in the terminal (here you will be shown your "masternode private key" - copy it). 
+
+***Step 5:***
+
+Wait for the full synchronization on the VPS wallet. 
 Command to monitor synchronization blocks:
 
 `watch wavi/wavi-cli getinfo`
@@ -43,6 +47,8 @@ Then you need to wait for the msdternodes list to sync. Command to monitor synch
 `watch wavi/wavi-cli mnsync status`
 
 This will update every two seconds and you need to wait till this shows 999 under the assetID section. Once it does exit the watch by typing ctrl-c.
+
+***Step 6:***
 
 After complete synchronization of blocks and masternodes list run your local wallet and click in the tab "Masternodes" on the button "Start MISSING". After that, it should take some time before the status of WATCHDOG_EXPIRED will change to ENABLED. It usually takes around 1 hour. If after some time you see the status "ENABLED", then your masternode is successfully launched. Congratulations!!
 
