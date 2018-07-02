@@ -36,7 +36,6 @@ function updates {
 		bsdmainutils libdb4.8++-dev libminiupnpc-dev libgmp3-dev ufw pkg-config libevent-dev libdb5.3++ unzip libzmq5"
 	exit 1
 	fi
-clear
 }
 
 function download_unpack_install {
