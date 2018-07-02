@@ -22,3 +22,4 @@ function install_sentinel {
 clear
 echo "$tgreen""Sentinel Install Script for WAVI"
 install_sentinel
+rm setup_wavi_only_sentinel.sh >/dev/null 2>&1
