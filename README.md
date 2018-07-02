@@ -59,4 +59,4 @@ Test the config by runnings all tests:
 
 `cd sentinel && ./venv/bin/py.test ./test`
 
-You should get: "23 tests passed". Congratulations! You have successfully installed WAVI Sentinel.
+You should get: "23 tests passed". Congratulations! You have successfully installed WAVI Sentinel. Now wait for some time when the status of WATCHDOG_EXPIRED will change to ENABLED.
