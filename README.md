@@ -29,9 +29,22 @@ The installation process can take 5 to 15 minutes, depending on your VPS configu
 
 ***Step 4:***
 
-Follow the instructions in the terminal. Then wait for the full synchronization on the VPS wallet. After that, it should take some time before the status of WATCHDOG_EXPIRED will change to ENABLED. It usually takes around 1 hour.
+Edit your masternode.conf on the local wallet following the instructions in the terminal (here you will be shown your "masternode private key" - copy it). Then wait for the full synchronization on the VPS wallet. 
+Command to monitor synchronization blocks:
 
-Note: the full synchronization from zero on the VPS wallet takes longer than usual. First, the header synchronization occurs, which can take about 40 minutes, and only then the block synchronization begins.
+`watch wavi/wavi-cli getinfo`
+
+This will be updated every two seconds and you need to wait for the number of blocks to match the number of blocks in the blockchain. (The number of blocks in the blockchain can be found here http://explorer.wavicom.info/). Once it does exit the watch by typing ctrl-c.
+
+Note: the full synchronization from zero on the VPS wallet takes longer than usual. First, the header synchronization occurs, which can take about 40 minutes, and only then the block synchronization begins. If you don't want to wait, you can upload an already synchronized blockchain database to the VPS.
+
+Then you need to wait for the msdternodes list to sync. Command to monitor synchronization masternodes:
+
+`watch wavi/wavi-cli mnsync status`
+
+This will update every two seconds and you need to wait till this shows 999 under the assetID section. Once it does exit the watch by typing ctrl-c.
+
+After complete synchronization of blocks and masternodes list run your local wallet and click in the tab "Masternodes" on the button "Start MISSING". After that, it should take some time before the status of WATCHDOG_EXPIRED will change to ENABLED. It usually takes around 1 hour. If after some time you see the status "ENABLED", then your masternode is successfully launched. Congratulations!!
 
 ### Installation of WAVI Sentinel.
 
