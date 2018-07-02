@@ -31,6 +31,8 @@ The installation process can take 5 to 15 minutes, depending on your VPS configu
 
 Edit your `masternode.conf` on the local wallet following the instructions in the terminal (here you will be shown your "masternode private key" - copy it). 
 
+Note: To get txhash txindex, you need to create a new address for masternode, send to it exactly 1000 WAVI, wait for 15 confirmations. Then click Tools | Debug Console. In the console window that comes up type "masternode outputs" without the quotes and press enter. This will output the transaction ID and the number (usually 0 or 1), which shows the transaction position in the block. This is "txhash" and "thindex" respectively.
+
 ***Step 5:***
 
 Wait for the full synchronization on the VPS wallet. 
