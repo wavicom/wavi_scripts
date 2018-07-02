@@ -11,8 +11,8 @@ function install_sentinel {
 		cd sentinel >/dev/null 2>&1
 		virtualenv ./venv >/dev/null 2>&1
 		./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
-		
-		sudo crontab -l | { cat; echo "* * * * * cd ~/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1" ;} | crontab -
+		crontab /etc/crontab
+		crontab -l | { cat; echo "* * * * * cd ~/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1" ;} | crontab -
 		cd >/dev/null 2>&1
 		echo -e "$tgreen""Complete"
 		echo -e "$tyellow""Please check the functionality of Sentinel with the command:"
