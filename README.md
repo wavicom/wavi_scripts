@@ -31,6 +31,8 @@ The installation process can take 5 to 15 minutes, depending on your VPS configu
 
 Follow the instructions in the terminal. Then wait for the full synchronization on the VPS wallet. After that, it should take some time before the status of WATCHDOG_EXPIRED will change to ENABLED. It usually takes around 1 hour.
 
+Note: the full synchronization from zero on the VPS wallet takes longer than usual, header synchronization occurs first, which can last about 40 minutes, and only then begins block synchronization.
+
 ### Installation of WAVI Sentinel.
 
 ***Step 1:*** 
