@@ -41,6 +41,7 @@ function updates {
 function download_unpack_install {
 	# grabbing the new release
 	echo -e "$tyellow""Downloading WAVI Daemon"
+	cd >/dev/null 2>&1
 	mkdir wavi >/dev/null 2>&1
 	cd wavi >/dev/null 2>&1
 	wget https://github.com/wavidev-the-man/wavi/releases/download/v0.12.2.4reup/wavicore-0.12.2.4-ubuntu64.tar.gz >/dev/null 2>&1
