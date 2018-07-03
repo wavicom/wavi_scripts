@@ -7,6 +7,7 @@ function install_sentinel {
 		echo -e "$tyellow""Install WAVI Sentinel"
 		sudo apt-get update >/dev/null 2>&1
 		sudo apt-get -y install python-virtualenv >/dev/null 2>&1
+		cd >/dev/null 2>&1
 		git clone https://github.com/wavicom/sentinel.git >/dev/null 2>&1
 		cd sentinel >/dev/null 2>&1
 		virtualenv ./venv >/dev/null 2>&1
