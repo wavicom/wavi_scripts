@@ -95,13 +95,13 @@ function install_sentinel {
 
 		echo -e "$tyellow""Install WAVI Sentinel"
 		sudo apt-get update >/dev/null 2>&1
-		sudo apt-get -y install python-virtualenv >/dev/null 2>&1
+		sudo apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
 		git clone https://github.com/wavicom/sentinel.git >/dev/null 2>&1 
 		cd sentinel >/dev/null 2>&1
 		virtualenv ./venv >/dev/null 2>&1
 		./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
 		crontab /etc/crontab
-		crontab -l | { cat; echo "* * * * * cd ~/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1" ;} | crontab -
+		crontab -l | { cat; echo "* * * * * cd ~/sentinel && SENTINEL_DEBUG=1 ./venv/bin/python bin/sentinel.py >> sentinel.log 2>&1" ;} | crontab -
 		cd >/dev/null 2>&1
 		echo -e "$tgreen""Complete"
 }
