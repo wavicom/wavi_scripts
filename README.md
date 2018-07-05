@@ -6,6 +6,10 @@ These scripts are designed to facilitate the process of installing WAVI Masterno
 - Installation instructions Sentinel only.
 - [Masternode+Sentinel+blockchain database](MN_and_sentinel_with_bc_db.md). This solves the problem of long wallet synchronization.
 
+Note: it is recommended to install root access before all actions. This can be done by command:
+
+`sudo -i`
+
 ### Full installation of WAVI. Masternode and Sentinel.
 
 ***Step 1:*** 
