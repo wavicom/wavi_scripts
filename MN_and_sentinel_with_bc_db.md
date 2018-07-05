@@ -6,19 +6,19 @@ This script is designed to speed up the process of wallet synchronization on VPS
 
 Download the script:
 
-`wget -q https://raw.githubusercontent.com/wavicom/wavi_scripts/master/setup_wavi_mn_and_sentinel_with_blockchain_database.sh`
+`wget -q https://raw.githubusercontent.com/wavicom/wavi_scripts/master/setup_wavi_mn_and_sentinel_with_bc_db.sh`
 
 ***Step 2:***
 
 Give access to the script:
 
-`chmod 755 setup_wavi_mn_and_sentinel_with_blockchain_database.sh`
+`chmod 755 setup_wavi_mn_and_sentinel_with_bc_db.sh`
 
 ***Step 3:***
 
 Running the script:
 
-`./setup_wavi_mn_and_sentinel_with_blockchain_database.sh`
+`./setup_wavi_mn_and_sentinel_with_bc_db.sh`
 
 The installation process can take 5 to 15 minutes, depending on your VPS configuration.
 
