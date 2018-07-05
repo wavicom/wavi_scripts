@@ -1,4 +1,4 @@
-### Full installation of WAVI. Masternode and Sentinel.
+### Full installation of WAVI. Masternode and Sentinel with WAVI Blockchain database.
 
 ***Step 1:*** 
 
