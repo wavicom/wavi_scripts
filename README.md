@@ -4,7 +4,7 @@ These scripts are designed to facilitate the process of installing WAVI Masterno
 
 - Instructions for full installation, including Masternode+Sentinel. 
 - Installation instructions Sentinel only.
-- [Masternode+Sentinel+blockchain database](MN_and_sentinel_with_bc_db.md) for more info.
+- [Masternode+Sentinel+blockchain database](MN_and_sentinel_with_bc_db.md). This solves the problem of long wallet synchronization.
 
 ### Full installation of WAVI. Masternode and Sentinel.
 
