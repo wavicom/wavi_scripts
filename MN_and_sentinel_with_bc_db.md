@@ -2,6 +2,10 @@
 
 This script is designed to speed up the process of wallet synchronization on VPS. Installing wavi masternode becomes easier and more enjoyable. This includes an algorithm to load the current database from the blockchain http://explorer.wavicom.info. This solves the problem of first long wallet synchronization.
 
+Note: it is recommended to install root access before all actions. This can be done by command:
+
+`sudo -i`
+
 ***Step 1:*** 
 
 Download the script:
