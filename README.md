@@ -59,7 +59,7 @@ This will update every two seconds and you need to wait till this shows 999 unde
 
 After complete synchronization of blocks and masternodes list run your local wallet and click in the tab "Masternodes" on the button "Start MISSING". After that, it should take some time before the status of WATCHDOG_EXPIRED will change to ENABLED. It usually takes around 1 hour. If after some time you see the status "ENABLED", then your masternode is successfully launched. Congratulations!!
 
-### Installation of WAVI Sentinel.
+### Installation of WAVI Sentinel only.
 
 ***Step 1:*** 
 
