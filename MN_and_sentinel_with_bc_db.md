@@ -1,6 +1,6 @@
 ### Full installation of WAVI. Masternode and Sentinel with WAVI Blockchain database.
 
-This script is designed to speed up the process of wallet synchronization on VPS. Installing wavi masternode becomes easier and more enjoyable. This includes an algorithm to load the current blockchain database from http://explorer.wavicom.info. This solves the problem of first long wallet synchronization.
+This script is designed to speed up the process of wallet synchronization on VPS. Installing wavi masternode becomes easier and more enjoyable. This includes an algorithm to load the current blockchain database from http://explorer.wavicom.info. This solves the problem of long wallet synchronization.
 
 Note: it is recommended to install root access before all actions. This can be done by command:
 
