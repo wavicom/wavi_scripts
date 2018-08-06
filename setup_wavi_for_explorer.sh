@@ -109,6 +109,5 @@ download_unpack_blockchain_database
 install_sentinel
 wavi/wavid -daemon -txindex >/dev/null 2>&1
 
-echo -e "\n"
 echo -e "WAVI setup is done.\n"
 rm setup_wavi_for_explorer.sh >/dev/null 2>&1
