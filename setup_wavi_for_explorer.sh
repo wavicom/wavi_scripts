@@ -107,7 +107,7 @@ sleep 10
 wavi/wavi-cli stop >/dev/null 2>&1
 download_unpack_blockchain_database
 install_sentinel
-wavi/wavid -daemon >/dev/null 2>&1
+wavi/wavid -daemon -txindex >/dev/null 2>&1
 
 echo -e "\n"
 echo -e "WAVI setup is done.\n"
