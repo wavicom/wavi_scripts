@@ -1,4 +1,4 @@
-## Scripts for automatically install WAVI Masternode and Sentinel for Ubuntu 16.04 LTS.
+## Scripts for automatically install WAVI Masternode and Sentinel for Ubuntu 16.04.
 
 These scripts are designed to facilitate the process of installing WAVI Masternode for Ubuntu 16.04. Be here:
 
