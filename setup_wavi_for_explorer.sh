@@ -98,7 +98,7 @@ function install_sentinel {
 		echo -e "$tgreen""Complete"
 }
 clear
-echo "$tgreen""Masternode Install Script for WAVI"
+echo "$tgreen""Install Script WAVI Core for Explorer"
 updates
 download_unpack_install
 setup_initial_config
